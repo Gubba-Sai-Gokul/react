@@ -1,0 +1,22 @@
+.nav ul {
+    display: flex;
+    gap: 3em;
+    margin: 0 25px;
+    margin-top: 25px;
+    padding: 0 25px;
+    /* position: absolute;
+    top: 0%;
+    transform: translateY(100%); */
+    list-style: none;
+}
+
+.nav ul li a {
+    color: black;
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav ul li :global(.active) {
+    color: rgb(52, 169, 52);
+}

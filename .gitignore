@@ -1,0 +1,14 @@
+# Dependencies (matches node_modules in any subfolder)
+node_modules/
+
+# Production build outputs
+build/
+dist/
+
+# Local environment variables (keeps secrets safe)
+.env
+.env.local
+
+# IDE and system files
+.DS_Store
+.vscode/
