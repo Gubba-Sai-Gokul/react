@@ -9,12 +9,14 @@ function AppLayout() {
   const isLoading = navigation.state === "loading";
 
   return (
-    <div className="layout">
+    <div className="grid grid-rows-[auto_1fr_auto] h-screen">
       {isLoading && <Loader />}
       <Header />
-      <main>
-        <Outlet />
-      </main>
+      <div className="sm:my-4 my-2 overflow-scroll">
+        <main className="mx-auto max-w-100">
+          <Outlet />
+        </main>
+      </div>
       <CartOverview />
     </div>
   );
